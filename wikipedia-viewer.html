@@ -1,33 +1,29 @@
-{% extends "../home/base.html" %}
-{% block title %}
-Wikipedia Viewer
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Wikipedia Viewer
+	</title>
+	<script src="/static/js/wikiViewer.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/css/wiki-viewer.css">
+</head>
 
-{% block header %}
-<script src="/static/js/wikiViewer.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
-<link rel="stylesheet" href="/static/css/wiki-viewer.css">
-{% endblock %}
+<body>
+	<div class="container text-center">
 
-{% block content %}
-<div class="container text-center">
+	  <div id="searchHeader">Search Wikipedia:</div>
 
-  <div id="searchHeader">Search Wikipedia:</div>
-  
-  <form>
-    <input id="search"></input>
-    <button class="btn btn-primary" id="searchbtn"><i class="fa fa-search"></i></button>
-  </form>
+	  <form>
+	    <input id="search"></input>
+	    <button class="btn btn-primary" id="searchbtn"><i class="fa fa-search"></i></button>
+	  </form>
 
-  <a href="https://en.wikipedia.org/wiki/Special:Random" >Or Click Here for Random Wiki Page</a>
+	  <a href="https://en.wikipedia.org/wiki/Special:Random" >Or Click Here for Random Wiki Page</a>
 
-  <div id="topics"></div>
-</div>
+	  <div id="topics"></div>
+	</div>
 
-
-
-<div class="text-center">
-	<a href="#"><i class="fa fa-github fontlink-light" aria-hidden="true"></i></a>
-	<p class="text-center description">This project was written in jQuery. Click for github code.</p>
-</div>
-{% endblock %}
+</body>
+</html>
